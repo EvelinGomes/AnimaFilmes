@@ -1,0 +1,267 @@
+/******************* Media Queries *********************/
+/* Extra small devices (portrait phones, less than 576px) -Esse .98 é para bugs de alguns navegadores-  */
+@media (max-width: 575.98px) {
+  body {
+    background: ;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) -Esse .98 é para bugs de alguns navegadores-  */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    background: ;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) -Esse .98 é para bugs de alguns navegadores-  */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    background: ;
+  }
+}
+
+/* Large devices (desktops, 992px and up) -Esse .98 é para bugs de alguns navegadores- */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    background: ;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    background: ;
+  }
+}
+
+/******************* FlexBlox *********************/
+/*.container {
+  display: flex;
+  /* row - linha,
+     row-reverse - linha à diteita,
+     column - coluna,
+     column-reverse - coluna de baixo pra cima 
+  flex-direction: row;*/
+
+  /* flex-start - agrupados do lado esquerdo,
+     flex-end - agrupados do alado direiro,
+     flex-center - no centro
+     space-between - espaço entre os elementos,
+     space-around - espaço entre os elementos com margem dos lados 
+  justify-content: space-around;*/
+
+  /* flex-start - alinha no inicio,
+     flex-end - alinha no fim, center - alinha no centro,
+     stretch - estica no espaco disponivel,
+     baseline - alinha na base no conteudo 
+  align-items: center;*/
+
+  /* nowrap - padrao tenta deixar tudo em uma linha só,
+     wrap - quebra os elementos pra baixo,
+     wrap-reverse - quebra os elementos pra cima, 
+  flex-wrap: wrap;*/
+
+  /*flex-flow: row wrap; - flex-direction com flex-wrap*/
+
+  /* flex-start - linhas vão subir agrupadas,
+     flex-end - linhas vão descer agrupadas,
+     center - linha agrupadas no centro,
+     space-between - espaço entre,
+     space-around - espaco entre com margem 
+  align-content: space-around;*/
+
+  /* gap - espaço entre os elementos,
+     row-gap - distancia entre linhas,
+     column-gap - distancia entre colunas 
+  gap: 70px;
+}
+
+.bloco1 {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.bloco2 {
+  width: 100px;
+  height: 100px;
+  background: blue;
+}
+
+.bloco3 {
+  width: 100px;
+  height: 100px;
+  background: purple;
+}*/
+
+/******************* Código de pulsar *********************/
+@-webkit-keyframes ef-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes ef-pulse-grow {
+  to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+.ef-pulse-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.ef-pulse-grow:hover, .ef-pulse-grow:focus, .ef-pulse-grow:active {
+  -webkit-animation-name: ef-pulse-grow;
+  animation-name: ef-pulse-grow;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+
+/******************* Código *********************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+/* TOPO */
+#topo {
+  height: 100px;
+  background: #d71515 url(imagens/topo2.png);
+  display: flex;
+  align-items: center;
+}
+
+#topo h1 {
+  font-family: ADELIA;
+  color: white;
+  margin-left: 500px;
+  margin-top: 30px;
+}
+
+/* MENU */
+#container-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+  padding: 20px;
+  margin-bottom: 10px;
+  background: #d71515 url(imagens/topo.png);
+  font-size: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu a:hover {
+  text-decoration: none;
+  color: #f6df2d;
+}
+
+/* CONTAINERS FILMES */
+#container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+#container2 {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+#container3 {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+/* FILMES */
+.filme {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.filme img {
+  border-radius: 10px;
+  width: 300px;
+  height: 180px;
+}
+
+.filme a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+
+.filme a:hover {
+  text-decoration: none;
+  color: #d71515;
+}
+
+.filme p {
+  text-align: center;
+}
+
+/* TEXTOS */
+.texto h3 {
+  font-size: 40px;
+  margin: 10px;
+  margin-left: 30px;
+}
+
+/* PAGINA FILME */
+.filme-poster {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.filme-poster img {
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.sobre {
+  display: inline-block;
+  margin-left: 10px;
+  width: 500px;
+}
+
+article#video {
+  display: inline-block;
+  width: 310px;
+  margin-left: 25px;
+}
+
+.avaliacao a {
+  text-decoration: none;
+  color: black;
+}
+
+.avaliacao a:hover {
+  text-decoration: none;
+  color: #d71515;
+}
